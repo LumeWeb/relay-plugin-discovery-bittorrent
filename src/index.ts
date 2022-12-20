@@ -74,7 +74,6 @@ function getHash(pubkey): string {
 const plugin: Plugin = {
   name: "discovery-bittorrent",
   async plugin(api: PluginAPI): Promise<void> {
-    debugger;
     const dht = new DHT({ verify: eddsa.verify });
     await put(dht, api);
 
