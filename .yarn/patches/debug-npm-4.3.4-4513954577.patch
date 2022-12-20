@@ -1,0 +1,15 @@
+diff --git a/src/index.js b/src/index.js
+index bf4c57f259df2e16761b45e2636db307c89ba419..a23827c73f2da725294298467fc3a07a0e4df34a 100644
+--- a/src/index.js
++++ b/src/index.js
+@@ -3,8 +3,5 @@
+  * treat as a browser.
+  */
+ 
+-if (typeof process === 'undefined' || process.type === 'renderer' || process.browser === true || process.__nwjs) {
+-	module.exports = require('./browser.js');
+-} else {
+-	module.exports = require('./node.js');
+-}
++module.exports = require('./node.js');
++

@@ -1,0 +1,29 @@
+{
+    "name": "@lumeweb/relay-plugin-discovery-bittorrent",
+    "version": "0.1.0",
+    "type": "module",
+    "scripts": {
+        "build": "rollup -c rollup.config.js"
+    },
+    "devDependencies": {
+        "@lumeweb/peer-discovery": "https://git.lumeweb.com/LumeWeb/peer-discovery.git",
+        "@lumeweb/relay-types": "https://git.lumeweb.com/LumeWeb/relay-types.git",
+        "@types/b4a": "^1.6.0",
+        "object-merger": "^1.0.3",
+        "prettier": "^2.8.1",
+        "rollup": "^3.7.5"
+    },
+    "dependencies": {
+        "@lumeweb/relay-plugin-rollup-preset": "https://git.lumeweb.com/LumeWeb/relay-plugin-rollup-preset.git",
+        "b4a": "^1.6.1",
+        "bittorrent-dht": "^11.0.1",
+        "bittorrent-dht-sodium": "^1.2.0",
+        "sha.js": "^2.4.11"
+    },
+    "resolutions": {
+        "debug@^4.3.4": "patch:debug@npm%3A4.3.4#./.yarn/patches/debug-npm-4.3.4-4513954577.patch",
+        "debug@4": "patch:debug@npm%3A4.3.4#./.yarn/patches/debug-npm-4.3.4-4513954577.patch",
+        "debug@^4.1.0": "patch:debug@npm%3A4.3.4#./.yarn/patches/debug-npm-4.3.4-4513954577.patch",
+        "debug@^4.3.3": "patch:debug@npm%3A4.3.4#./.yarn/patches/debug-npm-4.3.4-4513954577.patch"
+    }
+}
